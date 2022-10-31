@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transliteration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bs5/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="file.js" defer></script>
+    <script src="bs5/js/bootstrap.js" defer></script>
+    <script>
+        $(function () {
+            $("#header").load("assets/header.html");
+        });
+    </script>
+</head>
+<body>
+<header>
+    <div id="header"></div>
+</header>
+
+<div class="form-center">
+<form name="transliterateForm" class="form-class-transliteration" >
+    <label for="input_ukr">Українська</label><br>
+    <textarea  id="input_ukr" class="textarea" type="text" name="input_ukr" ></textarea>
+    <label for="output_eng">Транслітерація англійською</label><br>
+    <textarea id="output_eng" class="textarea" type="text" name="output_eng" disabled></textarea>
+</form>
+</div>
+</body>
+
+</html>

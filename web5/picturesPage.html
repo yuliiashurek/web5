@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bs5/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="file.js" defer></script>
+    <script src="bs5/js/bootstrap.js" defer></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("assets/header.html");
+        });
+    </script>
+</head>
+<body onload="pictureGeneration()">
+<header>
+    <div id="header"></div>
+</header>
+
+<!--<div class="form-center">-->
+<!--    <img class="image" src="pictures/1.JPG" onclick="changeImage('0')" alt="київ1">-->
+<!--    <img class="image" src="pictures/2.JPG" onclick="changeImage('1')" alt="київ2">-->
+<!--    <img class="image" src="pictures/3.JPG" onclick="changeImage('2')" alt="київ3">-->
+<!--    <div id="array"></div>-->
+<!--</div>-->
+<!--<img id="mainImage" src="pictures/1.JPG" alt="вибране фото">-->
+
+<div class="form-center">
+    <div class="picturesBlock">
+        <div id="small_pictures" class="small_pictures">
+        </div>
+        <div id="big_picture" class="big_picture">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
